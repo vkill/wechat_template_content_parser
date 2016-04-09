@@ -1,6 +1,8 @@
 # WechatTemplateContentParser
 
-this gem trying to helping Ruby developer to parse and fill wechat template content easily.
+[![Build Status](https://travis-ci.org/vkill/wechat_template_content_parser.svg?branch=master)](https://travis-ci.org/vkill/wechat_template_content_parser)
+
+This gem trying to helping Ruby developer to parse and fill wechat template content easily.
 
 ## Installation
 
@@ -21,6 +23,8 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
+require 'wechat_template_content_parser'
+
 content = "The time: {{time.DATA}}\nThe location: {{location.DATA}}"
 WechatTemplateContentParser.parse(content) # => [:time, :location]
 
